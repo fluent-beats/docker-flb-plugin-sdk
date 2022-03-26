@@ -1,0 +1,14 @@
+FROM    etriphany/fluent-bit-sdk
+
+LABEL   maintainer="etriphany.com"
+
+ARG     FLB_VERSION=1.8.4
+
+WORKDIR /usr/src/fluentbit
+RUN     curl -Lo /tmp/fluentbit.tgz https://github.com/fluent/fluent-bit/archive/v${FLB_VERSION}.tar.gz && \
+        tar xf /tmp/fluentbit.tgz
+
+WORKDIR /usr/src/fluentbit/fluent-bit-${FLB_VERSION}
+RUN     cmake .
+
+WORKDIR /my_plugin/build

@@ -1,0 +1,11 @@
+FROM    debian:stretch
+
+LABEL   maintainer="etriphany.com"
+
+ENV     DEBIAN_FRONTEND noninteractive
+ENV     PACKAGES "build-essential cmake make curl unzip libssl1.0-dev libasl-dev libsasl2-dev pkg-config libsystemd-dev zlib1g-dev flex ca-certificates bison"
+
+# Build packages
+RUN     apt-get update && \
+        apt-get install -y --no-install-recommends ${PACKAGES} && \
+        rm -rf /var/lib/apt/lists/*
