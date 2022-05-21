@@ -20,7 +20,7 @@ This image uses a volume pointing to `/my_plugin` directory inside the container
 
 # Build images
 ```bash
-./build.sh
+./code/build.sh
 ```
 
 # Usage
