@@ -1,9 +1,13 @@
-# docker-flb-plugin-sdk
+# Description
 
 Docker images used to build and test fluent-bit plugins.
 
-Adapted from original project [fopina/docker-fluent-bit-plugin-dev](https://github.com/fopina/docker-fluent-bit-plugin-dev)
+# Requirements
 
+* [Docker](www.docker.com)
+
+
+# Provided images
 ## etriphany/fluent-bit-sdk
 
 Provides the standard tooling required to build fluent-bit and its components, including static and dynamic plugins.
