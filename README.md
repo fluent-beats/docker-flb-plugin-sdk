@@ -13,6 +13,8 @@ Docker images used to build and test fluent-bit plugins.
 Provides the standard tooling required to build fluent-bit and its components, including static and dynamic plugins.
 This is the foundation image used to build plugins for any fluent-bit version.
 
+The ideal `Fluent Bit` version to use is **1.8.4**, newer versions may require some change on image build steps.
+
 ## fluent-beats/fluent-bit-plugin-dev
 
 Provides access to build plugins for specific fluent-bit version.
