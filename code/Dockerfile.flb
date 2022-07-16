@@ -1,4 +1,4 @@
-FROM    etriphany/fluent-bit-sdk
+FROM    fluent-beats/fluent-bit-sdk
 
 LABEL   maintainer="etriphany.com"
 
