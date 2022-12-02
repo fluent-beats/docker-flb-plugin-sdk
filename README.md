@@ -42,8 +42,8 @@ Building the official [fluent-bit plugin](https://github.com/fluent/fluent-bit-p
 ```bash
 git clone https://github.com/fluent/fluent-bit-plugin
 cd fluent-bit-plugin
-docker run --rm -ti -v $(pwd):/my_plugin fluent-beats/fluent-bit-plugin-dev cmake -DFLB_SOURCE=/usr/src/fluentbit/fluent-bit-1.8.4 -DPLUGIN_NAME=out_stdout2 ../
-docker run --rm -ti -v $(pwd):/my_plugin fluent-beats/fluent-bit-plugin-dev make
+docker run --rm -ti -v $(pwd):/my_plugin fluent-beats/fluent-bit-plugin-dev \
+sh -c "cmake -DFLB_SOURCE=/usr/src/fluentbit/fluent-bit-1.8.4 -DPLUGIN_NAME=out_stdout2 ../ && make"
 ```
 
 And `build/flb-out_stdout2.so` will be created. It can be quickly tested with `Fluent Bit` official image:
