@@ -1,6 +1,6 @@
 FROM    fluent-beats/fluent-bit-sdk
 
-LABEL   maintainer="etriphany.com"
+LABEL   org.opencontainers.image.authors="etriphany.com"
 
 ARG     FLB_VERSION=1.8.4
 
